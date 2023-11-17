@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="login">
+      <div class="civic-seek">Civic Seek</div>
+      <div class="login-child"></div>
+      <div class="div">ログイン</div>
+      <img class="login-item" alt="" src="./public/rectangle-18.svg" />
+
+      <div class="login-inner"></div>
+      <div class="div1">メールアドレスを入力してください</div>
+      <div class="div2">パスワードを入力してください</div>
+      <div class="div3">
+        <span>パスワードを忘れ方は</span>
+        <span class="span">こちら</span>
+      </div>
+      <div class="rectangle-div" id="rectangle2"></div>
+      <div class="div4">ログイン</div>
+      <div class="div5" id="text5">
+        <span class="txt">
+          <span>アカウントをまだ作成していない方は</span>
+          <span class="span1">こちら</span>
+        </span>
+      </div>
+    </div>
+
+    <script>
+      var rectangle2 = document.getElementById("rectangle2");
+      if (rectangle2) {
+        rectangle2.addEventListener("click", function (e) {
+          // Please sync "ログイン後HOME(afterlogin)" to the project
+        });
+      }
+      
+      var text5 = document.getElementById("text5");
+      if (text5) {
+        text5.addEventListener("click", function (e) {
+          // Please sync "アカウント作成画面(create_an_account)" to the project
+        });
+      }
+      </script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="edit-profile">
+      <div class="civic-seek" id="civicSeekText">Civic Seek</div>
+      <div class="edit-profile-child"></div>
+      <img
+        class="user-cicrle-light-icon"
+        alt=""
+        src="./public/user-cicrle-light.svg"
+        id="userCicrleLight"
+      />
+
+      <div class="div">マイプロフィール</div>
+      <div class="div1">名前</div>
+      <div class="edit-profile-item"></div>
+      <div class="edit-profile-inner"></div>
+      <div class="div2">メールアドレス</div>
+      <div class="div3">情報の編集</div>
+      <div class="rectangle-div" id="rectangle2"></div>
+      <div class="div4">修正する</div>
+    </div>
+
+    <script>
+      var civicSeekText = document.getElementById("civicSeekText");
+      if (civicSeekText) {
+        civicSeekText.addEventListener("click", function (e) {
+          // Please sync "ログイン後HOME(afterlogin)" to the project
+        });
+      }
+      
+      var userCicrleLight = document.getElementById("userCicrleLight");
+      if (userCicrleLight) {
+        userCicrleLight.addEventListener("click", function (e) {
+          // Please sync "ツールバー(toolbar)" to the project
+        });
+      }
+      
+      var rectangle2 = document.getElementById("rectangle2");
+      if (rectangle2) {
+        rectangle2.addEventListener("click", function (e) {
+          // Please sync "プロフィールページ(profile)" to the project
+        });
+      }
+      </script>
+  </body>
+</html>

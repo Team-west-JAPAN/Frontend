@@ -1,0 +1,198 @@
+.postcomment-child {
+  position: absolute;
+  top: 304px;
+  left: 82px;
+  border-radius: 30px;
+  background-color: #d9d9d9;
+  width: 778px;
+  height: 589px;
+}
+.civic-seek {
+  position: absolute;
+  top: 54px;
+  left: 37px;
+  font-size: 96px;
+  font-family: Ubuntu;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 536px;
+  height: 92px;
+  cursor: pointer;
+}
+.postcomment-item {
+  position: absolute;
+  top: 191.5px;
+  left: -0.5px;
+  border-top: 1px solid #000;
+  box-sizing: border-box;
+  width: 1441px;
+  height: 1px;
+}
+.postcomment-inner {
+  position: absolute;
+  top: 371px;
+  left: 134px;
+  border-radius: 50%;
+  background-color: #a7d1d3;
+  width: 98px;
+  height: 92px;
+}
+.div {
+  position: absolute;
+  top: 403px;
+  left: 238px;
+  font-size: 36px;
+  display: inline-block;
+  width: 589px;
+  height: 82px;
+}
+.p {
+  margin: 0;
+}
+.div1,
+.div2,
+.div3 {
+  position: absolute;
+  top: 560px;
+  left: 11px;
+  display: inline-block;
+  width: 873px;
+  height: 301px;
+}
+.div2,
+.div3 {
+  top: 496px;
+  left: -30px;
+  width: 802px;
+  height: 87px;
+}
+.div3 {
+  top: 798px;
+  left: -113px;
+  width: 759px;
+  height: 95px;
+}
+.home,
+.home-fill-icon {
+  position: absolute;
+  top: 221px;
+  left: 70px;
+  width: 71px;
+  height: 64px;
+}
+.home {
+  top: 234px;
+  font-size: 36px;
+  display: inline-block;
+  width: 263px;
+  height: 91px;
+}
+.menu-icon,
+.question-icon {
+  position: absolute;
+  top: 83px;
+  left: 1321px;
+  width: 54px;
+  height: 53px;
+}
+.question-icon {
+  top: 88px;
+  left: 1073px;
+  width: 57px;
+  height: 56px;
+}
+.user-cicrle-light-icon {
+  position: absolute;
+  top: 80px;
+  left: 1206px;
+  width: 66px;
+  height: 66px;
+  cursor: pointer;
+}
+.rectangle-div {
+  position: absolute;
+  top: 277px;
+  left: 965px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  width: 410px;
+  height: 617px;
+}
+.div4,
+.div5 {
+  position: absolute;
+  display: inline-block;
+}
+.div4 {
+  top: 511px;
+  left: 703px;
+  font-size: 20px;
+  width: 759px;
+  height: 95px;
+}
+.div5 {
+  top: 319px;
+  left: 952px;
+  width: 262px;
+  height: 52px;
+}
+.postcomment-child1 {
+  position: absolute;
+  top: 801px;
+  left: 977px;
+  background-color: #d9d9d9;
+  width: 371px;
+  height: 60px;
+}
+.div6,
+.ellipse-div {
+  position: absolute;
+  top: 821px;
+  left: 988px;
+}
+.ellipse-div {
+  top: 380px;
+  left: 997px;
+  border-radius: 50%;
+  background-color: #a7d1d3;
+  width: 46px;
+  height: 46px;
+}
+.div7,
+.div8,
+.unkown {
+  position: absolute;
+  top: 386px;
+  left: 1030px;
+  display: inline-block;
+  width: 166px;
+  height: 33px;
+}
+.div7,
+.div8 {
+  top: 433px;
+  left: 991px;
+  width: 357px;
+  height: 63px;
+}
+.div8 {
+  top: 386px;
+  left: 1288px;
+  font-size: 20px;
+  width: 44px;
+  height: 43px;
+}
+.postcomment {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 24px;
+  color: #000;
+  font-family: Inter;
+}

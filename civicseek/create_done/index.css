@@ -1,0 +1,78 @@
+.civic-seek {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 541px;
+  height: 165px;
+}
+.create-done-child {
+  position: absolute;
+  top: 164.5px;
+  left: -0.5px;
+  border-top: 1px solid #000;
+  box-sizing: border-box;
+  width: 1441px;
+  height: 1px;
+}
+.p {
+  margin: 0;
+}
+.div {
+  position: absolute;
+  top: 626px;
+  left: 127px;
+  font-size: 48px;
+  font-family: Inter;
+  display: inline-block;
+  width: 1185px;
+  height: 156px;
+}
+.txt {
+  line-break: anywhere;
+  width: 100%;
+}
+.div1 {
+  position: absolute;
+  top: 304px;
+  left: 29px;
+  font-family: Inter;
+  display: flex;
+  align-items: center;
+  width: 1382px;
+  height: 208px;
+}
+.create-done-item {
+  position: absolute;
+  top: 825px;
+  left: 595px;
+  border-radius: 15px;
+  background-color: #9dcaff;
+  width: 249px;
+  height: 97px;
+  cursor: pointer;
+}
+.top {
+  position: absolute;
+  top: 818px;
+  left: 572px;
+  font-size: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 296px;
+  height: 111px;
+}
+.create-done {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 96px;
+  color: #000;
+  font-family: Ubuntu;
+}

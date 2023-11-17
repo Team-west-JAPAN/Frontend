@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="postdone">
+      <div class="civic-seek" id="civicSeekText">Civic Seek</div>
+      <div class="div">投稿が完了しました</div>
+      <img
+        class="mdoutlinedoneoutline-icon"
+        alt=""
+        src="./public/mdoutlinedoneoutline.svg"
+      />
+
+      <div class="postdone-child" id="rectangle"></div>
+      <div class="home">Home</div>
+      <img class="home-fill-icon" alt="" src="./public/home-fill.svg" />
+
+      <img class="menu-icon" alt="" src="./public/menu.svg" />
+
+      <img
+        class="user-cicrle-light-icon"
+        alt=""
+        src="./public/user-cicrle-light.svg"
+        id="userCicrleLight"
+      />
+
+      <div class="postdone-item"></div>
+      <img class="search-icon" alt="" src="./public/search.svg" />
+
+      <div class="div1">案件を検索する</div>
+    </div>
+
+    <script>
+      var civicSeekText = document.getElementById("civicSeekText");
+      if (civicSeekText) {
+        civicSeekText.addEventListener("click", function (e) {
+          // Please sync "ログイン後HOME(afterlogin)" to the project
+        });
+      }
+      
+      var rectangle = document.getElementById("rectangle");
+      if (rectangle) {
+        rectangle.addEventListener("click", function (e) {
+          // Please sync "ログイン後HOME(afterlogin)" to the project
+        });
+      }
+      
+      var userCicrleLight = document.getElementById("userCicrleLight");
+      if (userCicrleLight) {
+        userCicrleLight.addEventListener("click", function (e) {
+          // Please sync "ツールバー(toolbar)" to the project
+        });
+      }
+      </script>
+  </body>
+</html>

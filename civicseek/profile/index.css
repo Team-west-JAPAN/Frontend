@@ -1,0 +1,103 @@
+.civic-seek,
+.profile-child {
+  position: absolute;
+  cursor: pointer;
+}
+.profile-child {
+  top: 347px;
+  left: 820px;
+  border-radius: 10px;
+  width: 192px;
+  height: 92px;
+}
+.civic-seek {
+  top: 0;
+  left: 0;
+  font-size: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 541px;
+  height: 165px;
+}
+.profile-item {
+  position: absolute;
+  top: 164.5px;
+  left: -0.5px;
+  border-top: 1px solid #000;
+  box-sizing: border-box;
+  width: 1441px;
+  height: 1px;
+}
+.user-cicrle-light-icon {
+  position: absolute;
+  top: 212px;
+  left: 77px;
+  width: 127px;
+  height: 122px;
+  cursor: pointer;
+}
+.div,
+.div1 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div {
+  top: 212px;
+  left: 213px;
+  font-size: 50px;
+  width: 516px;
+  height: 119px;
+}
+.div1 {
+  top: 423px;
+  left: 109px;
+  width: 476px;
+  height: 107px;
+}
+.profile-inner,
+.rectangle-div {
+  left: 306px;
+  border-radius: 15px;
+  background-color: #d9d9d9;
+  width: 733px;
+  height: 95px;
+}
+.profile-inner {
+  position: absolute;
+  top: 530px;
+}
+.rectangle-div {
+  top: 759px;
+}
+.div2,
+.div3,
+.rectangle-div {
+  position: absolute;
+}
+.div2 {
+  top: 656px;
+  left: 172px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 566px;
+  height: 72px;
+}
+.div3 {
+  top: 370px;
+  left: 876px;
+}
+.profile {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 40px;
+  color: #000;
+  font-family: Ubuntu;
+}

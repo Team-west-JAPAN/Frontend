@@ -1,0 +1,141 @@
+.create-an-account-child {
+  position: absolute;
+  top: 857px;
+  left: 617px;
+  border-radius: 10px;
+  background-color: #1b9bf8;
+  width: 192px;
+  height: 58px;
+}
+.civic-seek {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 541px;
+  height: 165px;
+}
+.create-an-account-item {
+  position: absolute;
+  top: 164.5px;
+  left: -0.5px;
+  border-top: 1px solid #000;
+  box-sizing: border-box;
+  width: 1441px;
+  height: 1px;
+}
+.div {
+  position: absolute;
+  top: 205px;
+  left: 371px;
+  font-size: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 684px;
+  height: 176px;
+}
+.create-an-account-child1,
+.create-an-account-child2,
+.rectangle-div {
+  position: absolute;
+  top: 446px;
+  left: 410px;
+  border-radius: 10px;
+  background-color: #d9d9d9;
+  width: 614px;
+  height: 66px;
+}
+.create-an-account-child1,
+.create-an-account-child2 {
+  top: 600px;
+  left: 407px;
+  width: 612px;
+  height: 58px;
+}
+.create-an-account-child2 {
+  top: 748px;
+  left: 402px;
+}
+.span {
+  color: #0b7afd;
+}
+.txt {
+  line-break: anywhere;
+  width: 100%;
+}
+.div1,
+.div2 {
+  position: absolute;
+}
+.div1 {
+  top: 915px;
+  left: 370px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  width: 701px;
+  height: 89px;
+  cursor: pointer;
+}
+.div2 {
+  top: 393px;
+  left: 365px;
+  width: 150px;
+  height: 53px;
+}
+.div2,
+.mail,
+.password {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mail {
+  position: absolute;
+  top: 553px;
+  left: 383px;
+  width: 106px;
+  height: 23px;
+}
+.password {
+  top: 699px;
+  left: 392px;
+  width: 140px;
+  height: 25px;
+}
+.div3,
+.div4,
+.password {
+  position: absolute;
+}
+.div3 {
+  height: 5.86%;
+  width: 14.17%;
+  top: 83.5%;
+  left: 42.43%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div4 {
+  top: 855px;
+  left: 611px;
+  width: 204px;
+  height: 60px;
+}
+.create-an-account {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 24px;
+  color: #000;
+  font-family: Ubuntu;
+}

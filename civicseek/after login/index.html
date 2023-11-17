@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="homeafterlogin">
+      <img class="homeafterlogin-child" alt="" src="./public/line-2.svg" />
+
+      <img class="home-fill-icon" alt="" src="./public/home-fill.svg" />
+
+      <div class="home">Home</div>
+      <img class="sort-icon" alt="" src="./public/sort.svg" />
+
+      <div class="rankings" id="rankingsText">Rankings</div>
+      <div class="homeafterlogin-item" id="rectangle"></div>
+      <img class="favorite-icon" alt="" src="./public/favorite.svg" />
+
+      <img class="favorite-icon1" alt="" src="./public/favorite1.svg" />
+
+      <div class="homeafterlogin-inner"></div>
+      <div class="rectangle-div"></div>
+      <div class="homeafterlogin-child1"></div>
+      <div class="homeafterlogin-child2"></div>
+      <div class="homeafterlogin-child3"></div>
+      <div class="homeafterlogin-child4"></div>
+      <div class="homeafterlogin-child5"></div>
+      <div class="homeafterlogin-child6"></div>
+      <div class="div">いいね！</div>
+      <img class="external-icon" alt="" src="./public/external.svg" />
+
+      <div class="div1">共有</div>
+      <div class="div2">いいねした投稿</div>
+      <div class="homeafterlogin-child7"></div>
+      <div class="civic-seek">Civic Seek</div>
+      <div class="homeafterlogin-child8"></div>
+      <img class="search-icon" alt="" src="./public/search.svg" />
+
+      <div class="div3">案件を検索する</div>
+      <img class="menu-icon" alt="" src="./public/menu.svg" />
+
+      <img class="add-ring-icon" alt="" src="./public/add-ring.svg" />
+
+      <div class="div4">募集する</div>
+      <img
+        class="user-cicrle-light-icon"
+        alt=""
+        src="./public/user-cicrle-light.svg"
+        id="userCicrleLightIcon"
+      />
+
+      <div class="homeafterlogin-child7"></div>
+      <div class="civic-seek">Civic Seek</div>
+      <div class="homeafterlogin-child8"></div>
+      <img class="search-icon" alt="" src="./public/search.svg" />
+
+      <div class="div3">案件を検索する</div>
+      <img class="menu-icon" alt="" src="./public/menu.svg" />
+
+      <img class="add-ring-icon" alt="" src="./public/add-ring.svg" />
+
+      <div class="div6" id="text6">投稿する</div>
+      <img
+        class="user-cicrle-light-icon"
+        alt=""
+        src="./public/user-cicrle-light.svg"
+        id="userCicrleLightIcon1"
+      />
+
+      <img class="bell-icon" alt="" src="./public/bell.svg" />
+    </div>
+
+    <script>
+      var rankingsText = document.getElementById("rankingsText");
+      if (rankingsText) {
+        rankingsText.addEventListener("click", function (e) {
+          // Please sync "ランキング画面(rankings)" to the project
+        });
+      }
+      
+      var rectangle = document.getElementById("rectangle");
+      if (rectangle) {
+        rectangle.addEventListener("click", function (e) {
+          // Please sync "投稿表示画面(コメント投稿)(postcomment))" to the project
+        });
+      }
+      
+      var userCicrleLightIcon = document.getElementById("userCicrleLightIcon");
+      if (userCicrleLightIcon) {
+        userCicrleLightIcon.addEventListener("click", function (e) {
+          // Please sync "ツールバー(toolbar)" to the project
+        });
+      }
+      
+      var text6 = document.getElementById("text6");
+      if (text6) {
+        text6.addEventListener("click", function (e) {
+          // Please sync "投稿画面(post)" to the project
+        });
+      }
+      
+      var userCicrleLightIcon1 = document.getElementById("userCicrleLightIcon1");
+      if (userCicrleLightIcon1) {
+        userCicrleLightIcon1.addEventListener("click", function (e) {
+          // Please sync "ツールバー(toolbar)" to the project
+        });
+      }
+      </script>
+  </body>
+</html>
