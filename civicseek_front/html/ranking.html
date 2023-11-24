@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <style>body {
+      margin: 0;
+      line-height: normal;
+    }
+    
+    :root {
+      /* fonts */
+      --font-ubuntu: Ubuntu;
+    
+      /* font sizes */
+      --font-size-23xl: 2.63rem;
+    
+      /* Colors */
+      --color-black: #000;
+      --color-gainsboro: #d9d9d9;
+    }.civic-seek {
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 5.25rem;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 29.59rem;
+  height: 9.02rem;
+  cursor: pointer;
+}
+.rankings-child {
+  position: absolute;
+  top: 9rem;
+  left: -0.03rem;
+  border-top: 0.9px solid var(--color-black);
+  box-sizing: border-box;
+  width: 78.81rem;
+  height: 0.06rem;
+}
+.div,
+.no1,
+.no2,
+.no3 {
+  position: absolute;
+  top: 9.73rem;
+  left: 1.09rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 27.45rem;
+  height: 5.63rem;
+}
+.no1,
+.no2,
+.no3 {
+  top: 12.58rem;
+  left: -2.62rem;
+  width: 22.53rem;
+  height: 9.79rem;
+}
+.no2,
+.no3 {
+  top: 25.92rem;
+  left: -2.79rem;
+  width: 22.86rem;
+  height: 8.26rem;
+}
+.no3 {
+  top: 38.34rem;
+  left: -0.33rem;
+  width: 17.99rem;
+  height: 8.91rem;
+}
+.rankings-inner,
+.rankings-item,
+.rectangle-div {
+  position: absolute;
+  top: 19.63rem;
+  left: 5.85rem;
+  background-color: var(--color-gainsboro);
+  width: 67.38rem;
+  height: 7.27rem;
+}
+.rankings-inner,
+.rectangle-div {
+  top: 32.16rem;
+  width: 67.48rem;
+  height: 7.82rem;
+}
+.rectangle-div {
+  top: 45.39rem;
+  height: 7.98rem;
+}
+.div1 {
+  position: absolute;
+  top: 19.47rem;
+  left: -0.33rem;
+  font-size: 1.09rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22.7rem;
+  height: 5.03rem;
+}
+.rankings {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 56rem;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-23xl);
+  color: var(--color-black);
+  font-family: var(--font-ubuntu);
+}
+    </style>
+    <div class="rankings">
+      <a class="civic-seek" muted id="civicSeek">Civic Seek</a>
+      <div class="rankings-child"></div>
+      <div class="div">ランキング</div>
+      <div class="no1">No.1</div>
+      <div class="no2">No.2</div>
+      <div class="no3">No.3</div>
+      <div class="rankings-item"></div>
+      <div class="rankings-inner"></div>
+      <div class="rectangle-div"></div>
+      <div class="div1">・タイトル</div>
+    </div>
+
+    <script>
+      var civicSeek = document.getElementById("civicSeek");
+      if (civicSeek) {
+        civicSeek.addEventListener("click", function (e) {
+          // Please sync "ログイン後HOME(afterlogin)" to the project
+        });
+      }
+      </script>
+  </body>
+</html>

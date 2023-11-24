@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <style>body {
+      margin: 0;
+      line-height: normal;
+    }
+    
+    :root {
+      /* fonts */
+      --font-inter: Inter;
+      --font-ubuntu: Ubuntu;
+    
+      /* font sizes */
+      --font-size-mid-5: 1.09rem;
+      --font-size-2xs-5: 0.66rem;
+      --font-size-65xl: 5.25rem;
+    
+      /* Colors */
+      --color-black: #000;
+      --color-gainsboro: #d9d9d9;
+      --color-gray-100: #222;
+    
+      /* Border radiuses */
+      --br-4xs-8: 8.8px;
+    }
+    .post-child,
+.post-item {
+  position: absolute;
+  border-radius: 8.75px;
+}
+.post-child {
+  top: 17.06rem;
+  left: 23.68rem;
+  background-color: #fdfcfc;
+  border: 0.9px solid var(--color-black);
+  box-sizing: border-box;
+  width: 31.34rem;
+  height: 32.48rem;
+}
+.post-item {
+  top: 3.56rem;
+  left: 57.26rem;
+  background-color: var(--color-gainsboro);
+  width: 9.19rem;
+  height: 2.9rem;
+}
+.civic-seek {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-65xl);
+  font-family: var(--font-ubuntu);
+  color: var(--color-black);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 29.75rem;
+  height: 9.02rem;
+}
+.post-inner {
+  position: absolute;
+  top: 3.56rem;
+  left: 35.55rem;
+  background-color: var(--color-gainsboro);
+  width: 17.23rem;
+  height: 2.9rem;
+}
+.search-icon {
+  position: absolute;
+  top: 4.32rem;
+  left: 36.2rem;
+  width: 1.35rem;
+  height: 1.35rem;
+}
+.div,
+.menu-icon {
+  position: absolute;
+  top: 3.99rem;
+}
+.div {
+  left: 35.55rem;
+  font-size: var(--font-size-2xs-5);
+  font-family: var(--font-ubuntu);
+  color: var(--color-black);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 11.65rem;
+  height: 1.97rem;
+}
+.menu-icon {
+  left: 74.54rem;
+  width: 1.97rem;
+  height: 2.02rem;
+}
+.add-ring-icon,
+.div1 {
+  position: absolute;
+  top: 4.16rem;
+  left: 57.97rem;
+  width: 1.64rem;
+  height: 1.53rem;
+}
+.div1 {
+  top: 4.27rem;
+  left: 59.61rem;
+  font-size: var(--font-size-mid-5);
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: center;
+  display: inline-block;
+  width: 6.18rem;
+  height: 1.7rem;
+}
+.user-cicrle-light-icon {
+  position: absolute;
+  top: 3.94rem;
+  left: 70.55rem;
+  width: 2.3rem;
+  height: 2.13rem;
+  cursor: pointer;
+}
+.rectangle-input {
+  border: 0;
+  background-color: var(--color-gainsboro);
+  position: absolute;
+  top: 3.56rem;
+  left: 35.55rem;
+  width: 17.23rem;
+  height: 2.9rem;
+}
+.add-ring-icon1 {
+  position: absolute;
+  top: 4.16rem;
+  left: 57.97rem;
+  width: 1.44rem;
+  height: 1.34rem;
+}
+.user-cicrle-light-child,
+.user-cicrle-light-item {
+  position: absolute;
+  height: 27.24%;
+  width: 27.08%;
+  top: 28.04%;
+  right: 36.46%;
+  bottom: 44.71%;
+  left: 36.46%;
+  border-radius: 50%;
+  border: 0.8px solid var(--color-gray-100);
+  box-sizing: border-box;
+}
+.user-cicrle-light-item {
+  height: 77.24%;
+  width: 77.08%;
+  top: 11.38%;
+  right: 11.46%;
+  bottom: 11.38%;
+  left: 11.46%;
+}
+.user-cicrle-light-inner {
+  position: absolute;
+  height: 17.69%;
+  width: 52.08%;
+  top: 61.38%;
+  right: 23.96%;
+  bottom: 20.94%;
+  left: 23.96%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.user-cicrle-light {
+  text-decoration: none;
+  position: absolute;
+  top: 3.94rem;
+  left: 70.55rem;
+  width: 2.3rem;
+  height: 2.13rem;
+  cursor: pointer;
+}
+.line-div {
+  position: absolute;
+  top: 9rem;
+  left: 0.85rem;
+  border-top: 0.9px solid var(--color-black);
+  box-sizing: border-box;
+  width: 78.81rem;
+  height: 0.06rem;
+}
+.div4,
+.div5 {
+  position: absolute;
+  color: var(--color-black);
+  text-align: center;
+}
+.div4 {
+  top: 11.38rem;
+  left: 23.79rem;
+  font-size: 2.63rem;
+  font-family: var(--font-ubuntu);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14.33rem;
+  height: 4.16rem;
+}
+.div5 {
+  top: 19.74rem;
+  left: 26.52rem;
+  font-size: var(--font-size-mid-5);
+  font-family: var(--font-inter);
+}
+.post-child1 {
+  border: 0;
+  background-color: var(--color-gainsboro);
+  position: absolute;
+  top: 21.66rem;
+  left: 26.91rem;
+  width: 24.88rem;
+  height: 2.46rem;
+}
+.div6 {
+  position: absolute;
+  top: 25.65rem;
+  left: 22.91rem;
+  font-size: var(--font-size-mid-5);
+  font-family: var(--font-ubuntu);
+  color: var(--color-black);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 11.65rem;
+  height: 2.35rem;
+}
+.post-child2 {
+  border: 0;
+  background-color: var(--color-gainsboro);
+  position: absolute;
+  top: 28.49rem;
+  left: 26.8rem;
+  width: 24.99rem;
+  height: 15.15rem;
+}
+.div7 {
+  position: absolute;
+  top: 44.19rem;
+  left: 42.77rem;
+  font-size: 0.88rem;
+  font-family: var(--font-ubuntu);
+  color: var(--color-black);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10.45rem;
+  height: 1.86rem;
+}
+.b,
+.rectangle-button {
+  position: absolute;
+  cursor: pointer;
+}
+.rectangle-button {
+  border: 0;
+  padding: 0;
+  background-color: #a4ceff;
+  top: 46.05rem;
+  left: 36.04rem;
+  border-radius: 4.38px;
+  width: 6.73rem;
+  height: 2.24rem;
+}
+.b {
+  top: 46.27rem;
+  left: 37.73rem;
+  font-size: 0.82rem;
+  display: flex;
+  font-family: var(--font-ubuntu);
+  color: var(--color-black);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 4.87rem;
+  height: 1.75rem;
+}
+.mdoutlinesend-icon,
+.rectangle-a {
+  position: absolute;
+  top: 46.59rem;
+  left: 36.86rem;
+  width: 0.93rem;
+  height: 1.15rem;
+}
+.rectangle-a {
+  text-decoration: none;
+  top: 12.2rem;
+  left: 45.12rem;
+  background-color: var(--color-gainsboro);
+  width: 8.09rem;
+  height: 3.34rem;
+  cursor: pointer;
+}
+.arrowuupleft-icon {
+  position: absolute;
+  top: 12.91rem;
+  left: 46.32rem;
+  width: 1.75rem;
+  height: 1.75rem;
+}
+.div8 {
+  position: absolute;
+  top: 13.18rem;
+  left: 49.6rem;
+  font-size: var(--font-size-mid-5);
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: center;
+}
+.post {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 3.5px 3.5px rgba(0, 0, 0, 0.25),
+    0 3.5px 3.5px rgba(0, 0, 0, 0.25);
+  border: 0.9px solid var(--color-black);
+  box-sizing: border-box;
+  width: 100%;
+  height: 56rem;
+  overflow: hidden;
+}
+
+    </style>
+    <form class="post">
+      <div class="post-child"></div>
+      <div class="post-item"></div>
+      <div class="civic-seek">Civic Seek</div>
+      <div class="post-inner"></div>
+      <img class="search-icon" alt="" src="./public/search.svg" />
+
+      <div class="div">案件を検索する</div>
+      <img class="menu-icon" alt="" src="./public/menu.svg" />
+
+      <img class="add-ring-icon" alt="" src="./public/add-ring.svg" />
+
+      <div class="div1">募集する</div>
+      <img
+        class="user-cicrle-light-icon"
+        alt=""
+        src="./public/user-cicrle-light.svg"
+        id="userCicrleLightIcon"
+      />
+
+      <div class="post-item"></div>
+      <div class="civic-seek">Civic Seek</div>
+      <input class="rectangle-input" name="seek" type="text" />
+
+      <img class="search-icon" alt="" src="./public/search.svg" />
+
+      <div class="div">案件を検索する</div>
+      <img class="menu-icon" alt="" src="./public/menu.svg" />
+
+      <img class="add-ring-icon1" alt="" src="./public/add-ring1.svg" />
+
+      <div class="div1">募集する</div>
+      <a class="user-cicrle-light" id="userCicrleLight">
+        <div class="user-cicrle-light-child"></div>
+        <div class="user-cicrle-light-item"></div>
+        <img
+          class="user-cicrle-light-inner"
+          alt=""
+          src="./public/ellipse-48.svg"
+        />
+      </a>
+      <div class="line-div"></div>
+      <div class="div4">投稿する</div>
+      <div class="div5">タイトル</div>
+      <input class="post-child1" name="title" type="text" />
+
+      <div class="div6">投稿内容</div>
+      <input class="post-child2" name="post" type="text" />
+
+      <div class="div7">文字数（○○○字）</div>
+      <button class="rectangle-button" autofocus="{true}"></button>
+      <b class="b" id="text8">投稿する</b>
+      <img class="mdoutlinesend-icon" alt="" src="./public/mdoutlinesend.svg" />
+
+      <a class="rectangle-a" id="rectangleLink"> </a>
+      <img class="arrowuupleft-icon" alt="" src="./public/arrowuupleft.svg" />
+
+      <div class="div8">戻る</div>
+    </form>
+
+    <script>
+      var userCicrleLightIcon = document.getElementById("userCicrleLightIcon");
+      if (userCicrleLightIcon) {
+        userCicrleLightIcon.addEventListener("click", function (e) {
+          // Please sync "ツールバー(toolbar)" to the project
+        });
+      }
+      
+      var userCicrleLight = document.getElementById("userCicrleLight");
+      if (userCicrleLight) {
+        userCicrleLight.addEventListener("click", function (e) {
+          // Please sync "ツールバー(toolbar)" to the project
+        });
+      }
+      
+      var text8 = document.getElementById("text8");
+      if (text8) {
+        text8.addEventListener("click", function (e) {
+          // Please sync "投稿完了画面(postdone)" to the project
+        });
+      }
+      
+      var rectangleLink = document.getElementById("rectangleLink");
+      if (rectangleLink) {
+        rectangleLink.addEventListener("click", function (e) {
+          // Please sync "ログイン後HOME(afterlogin)" to the project
+        });
+      }
+      </script>
+  </body>
+</html>

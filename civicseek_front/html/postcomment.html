@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <style>body {
+      margin: 0;
+      line-height: normal;
+    }
+    
+    :root {
+      /* fonts */
+      --font-inter: Inter;
+      --font-ubuntu: Ubuntu;
+    
+      /* font sizes */
+      --font-size-mid-5: 1.09rem;
+      --font-size-2xl: 1.31rem;
+      --font-size-12xl-5: 1.97rem;
+    
+      /* Colors */
+      --color-white: #fff;
+      --color-black: #000;
+      --color-powderblue: #a7d1d3;
+      --color-gainsboro: #d9d9d9;
+      --color-gray: #222;
+    }
+    .postcomment-child {
+  position: absolute;
+  top: 16.63rem;
+  left: 4.48rem;
+  border-radius: 26.25px;
+  background-color: var(--color-gainsboro);
+  width: 42.55rem;
+  height: 32.21rem;
+}
+.civic-seek {
+  position: absolute;
+  top: 2.95rem;
+  left: 2.02rem;
+  font-size: 5.25rem;
+  font-family: var(--font-ubuntu);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 29.31rem;
+  height: 5.03rem;
+  cursor: pointer;
+}
+.postcomment-item {
+  position: absolute;
+  top: 10.47rem;
+  left: -0.03rem;
+  border-top: 0.9px solid var(--color-black);
+  box-sizing: border-box;
+  width: 78.81rem;
+  height: 0.06rem;
+}
+.postcomment-inner {
+  position: absolute;
+  top: 20.29rem;
+  left: 7.33rem;
+  border-radius: 50%;
+  background-color: var(--color-powderblue);
+  width: 5.36rem;
+  height: 5.03rem;
+}
+.div {
+  position: absolute;
+  top: 22.04rem;
+  left: 13.02rem;
+  font-size: var(--font-size-12xl-5);
+  display: inline-block;
+  width: 32.21rem;
+  height: 4.48rem;
+}
+.p {
+  margin: 0;
+}
+.div1,
+.div2,
+.div3 {
+  position: absolute;
+  top: 30.63rem;
+  left: 0.6rem;
+  display: inline-block;
+  width: 47.74rem;
+  height: 16.46rem;
+}
+.div2,
+.div3 {
+  top: 27.13rem;
+  left: -1.64rem;
+  width: 43.86rem;
+  height: 4.76rem;
+}
+.div3 {
+  top: 43.64rem;
+  left: -6.18rem;
+  width: 41.51rem;
+  height: 5.2rem;
+}
+.subtract-icon {
+  position: relative;
+  width: 2.33rem;
+  height: 2.41rem;
+}
+.home,
+.home-fill {
+  position: absolute;
+  left: 3.83rem;
+}
+.home-fill {
+  text-decoration: none;
+  top: 12.09rem;
+  width: 3.99rem;
+  height: 3.6rem;
+}
+.home {
+  top: 12.8rem;
+  font-size: var(--font-size-12xl-5);
+  display: inline-block;
+  width: 14.38rem;
+  height: 4.98rem;
+}
+.menu-icon,
+.question-icon {
+  position: absolute;
+  top: 4.54rem;
+  left: 72.24rem;
+  width: 2.95rem;
+  height: 2.9rem;
+}
+.question-icon {
+  top: 4.81rem;
+  left: 58.68rem;
+  width: 3.12rem;
+  height: 3.06rem;
+}
+.user-cicrle-light-child,
+.user-cicrle-light-item {
+  position: absolute;
+  height: 26.33%;
+  width: 26.33%;
+  top: 28.5%;
+  right: 36.84%;
+  bottom: 45.17%;
+  left: 36.84%;
+  border-radius: 50%;
+  border: 0.8px solid var(--color-gray);
+  box-sizing: border-box;
+}
+.user-cicrle-light-item {
+  height: 76.33%;
+  width: 76.33%;
+  top: 11.84%;
+  right: 11.84%;
+  bottom: 11.84%;
+  left: 11.84%;
+}
+.user-cicrle-light-inner {
+  position: absolute;
+  height: 16.77%;
+  width: 51.33%;
+  top: 61.84%;
+  right: 24.34%;
+  bottom: 21.4%;
+  left: 24.34%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.user-cicrle-light {
+  text-decoration: none;
+  position: absolute;
+  top: 4.38rem;
+  left: 65.95rem;
+  width: 3.61rem;
+  height: 3.61rem;
+  cursor: pointer;
+}
+.rectangle-textarea {
+  border: 0.9px solid var(--color-black);
+  background-color: var(--color-white);
+  position: absolute;
+  top: 15.15rem;
+  left: 52.77rem;
+  border-radius: 8.75px;
+  box-sizing: border-box;
+  width: 22.42rem;
+  height: 33.74rem;
+}
+.div4,
+.div5 {
+  position: absolute;
+  display: inline-block;
+}
+.div4 {
+  top: 27.95rem;
+  left: 38.45rem;
+  font-size: var(--font-size-mid-5);
+  width: 41.51rem;
+  height: 5.2rem;
+}
+.div5 {
+  top: 17.45rem;
+  left: 52.06rem;
+  width: 14.33rem;
+  height: 2.84rem;
+}
+.rectangle-input {
+  border: 0;
+  background-color: var(--color-gainsboro);
+  position: absolute;
+  top: 43.81rem;
+  left: 53.43rem;
+  width: 20.29rem;
+  height: 3.28rem;
+}
+.div6,
+.ellipse-div {
+  position: absolute;
+  top: 44.9rem;
+  left: 54.03rem;
+}
+.ellipse-div {
+  top: 20.78rem;
+  left: 54.52rem;
+  border-radius: 50%;
+  background-color: var(--color-powderblue);
+  width: 2.52rem;
+  height: 2.52rem;
+}
+.div7,
+.div8,
+.unkown {
+  position: absolute;
+  top: 21.11rem;
+  left: 56.33rem;
+  display: inline-block;
+  width: 9.08rem;
+  height: 1.81rem;
+}
+.div7,
+.div8 {
+  top: 23.68rem;
+  left: 54.2rem;
+  width: 19.52rem;
+  height: 3.45rem;
+}
+.div8 {
+  top: 21.11rem;
+  left: 70.44rem;
+  font-size: var(--font-size-mid-5);
+  width: 2.41rem;
+  height: 2.35rem;
+}
+.postcomment {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 56rem;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-2xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+</style>
+    <div class="postcomment">
+      <div class="postcomment-child"></div>
+      <div class="civic-seek" id="civicSeekText">Civic Seek</div>
+      <div class="postcomment-item"></div>
+      <div class="postcomment-inner"></div>
+      <div class="div">『タイトル』　ーーーーーーーー</div>
+      <div class="div1">
+        <p class="p">ーーーーーーーーーーーーーーーーーーーーー</p>
+        <p class="p">ーーーーーーーーーーーーーーーーーーーーー</p>
+        <p class="p">ーーーーーーーーーーーーーーーーーーーーー</p>
+        <p class="p">ーーーーーーーーーーーーーーーーーーーーー</p>
+        <p class="p">ーーーーーーーーーーーーーーーーーーーーー</p>
+        <p class="p">ーーーーーーーーーーーーーーーーーーーーー</p>
+        <p class="p">ーーーーーーーーーーーーーーーーーーーーー</p>
+      </div>
+      <div class="div2">投稿日：0000/00/00　投稿者：------</div>
+      <div class="div3">♡ いいね　</div>
+      <a class="home-fill">
+        <img class="subtract-icon" alt="" src="./public/subtract.svg" />
+      </a>
+      <div class="home">Home</div>
+      <img class="menu-icon" alt="" src="./public/menu.svg" />
+
+      <img class="question-icon" alt="" src="./public/question.svg" />
+
+      <a class="user-cicrle-light" id="userCicrleLight">
+        <div class="user-cicrle-light-child"></div>
+        <div class="user-cicrle-light-item"></div>
+        <img
+          class="user-cicrle-light-inner"
+          alt=""
+          src="./public/ellipse-48.svg"
+        />
+      </a>
+      <textarea class="rectangle-textarea" autofocus="{true}"> </textarea>
+      <div class="div4">♡ いいね　</div>
+      <div class="div5">▷コメント欄</div>
+      <input
+        class="rectangle-input"
+        name="write"
+        placeholder="書き込みスペース"
+        type="text"
+      />
+
+      <div class="div6">書き込みスペース</div>
+      <div class="ellipse-div"></div>
+      <div class="unkown">Unkown</div>
+      <div class="div7">
+        <p class="p">-------------------------</p>
+        <p class="p">-------------------------</p>
+      </div>
+      <div class="div8">:</div>
+    </div>
+
+    <script>
+      var civicSeekText = document.getElementById("civicSeekText");
+      if (civicSeekText) {
+        civicSeekText.addEventListener("click", function (e) {
+          // Please sync "ログイン後HOME(afterlogin)" to the project
+        });
+      }
+      
+      var userCicrleLight = document.getElementById("userCicrleLight");
+      if (userCicrleLight) {
+        userCicrleLight.addEventListener("click", function (e) {
+          // Please sync "ツールバー(toolbar)" to the project
+        });
+      }
+      </script>
+  </body>
+</html>
