@@ -1,0 +1,274 @@
+.header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+.logo{
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav ul li {
+    margin-right: 20px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 2.3em;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .logo{
+        align-self: start;
+    }
+    .nav ul {
+        flex-direction:row
+        margin-top: 10px;
+    }
+
+    .nav ul li {
+        margin-right: 30px;
+    }
+    search_container, .post-button {
+        width: 100%;
+        margin: 10px 0;
+        align-items:center ;
+    }
+    
+}
+input[type="button"] {
+    background-color: #4CAF50; /* 緑色の背景 */
+    border: none;
+    color: white;
+    padding: 10px 20px; /* パディングを少し小さくして大きく見せる */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px; /* ボタンの角を丸くする */
+
+}
+
+input[type="button"]:hover {
+    background-color: #45a049; /* ホバー時に少し暗い緑色に変わる */
+}
+
+input[type="button"]:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666; /* クリック時に影を小さくする */
+    transform: translateY(4px); /* クリック時に少し下に移動するように見せる */
+}
+.search_container{
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid #999;
+    padding: 3px 10px;
+    border-radius: 20px;
+    height: 2.3em;
+    width: 260px;
+    overflow: hidden;
+    background: #fff;
+    margin-right: 2em;
+  }
+  .search_container input[type="text"]{
+    border: none;
+    height: 2.0em;
+    color: #333;
+    padding-left: 1em
+  }
+  .search_container input[type="text"]:focus {
+    outline: 0;
+  }
+  .search_container input[type="submit"]{
+    cursor: pointer;
+    font-family: FontAwesome;
+    font-size: 1.3em;
+    border: none;
+    background: none;
+    color: #3879D9;
+    position: absolute;
+    width: 2.5em;
+    height: 2.5em;
+    right: 0;
+    top: -10px;
+    outline : none;
+  }
+.post-button {
+    background-color: #4c61af; /* ボタンの背景色 */
+    color: white; /* ボタンのテキスト色 */
+    padding: 10px 24px; /* ボタンのパディング */
+    border: none; /* ボタンの境界線を削除 */
+    cursor: pointer; /* マウスカーソルをポインタに変更 */
+    text-align: center; /* テキストを中央揃えに */
+    text-decoration: none; /* テキストの下線を削除 */
+    display: inline-block; /* ボタンをインラインブロック要素に */
+    font-size: 16px; /* フォントサイズを設定 */
+    margin: 4px 2px; /* マージンを設定 */
+    transition-duration: 0.4s; /* トランジションの時間を設定 */
+    margin-left: em;
+}
+ul li {
+    display: inline-block;
+    color: #333;
+    margin-right: 50px; /* Adjust as needed */
+  }
+
+/* 基本的なリセットとボックスサイジング */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}.container {
+    display: grid;
+    grid-template-columns: 250px 1fr; /* サイドバーの幅とメインコンテンツの幅 */
+    gap: 20px; /* サイドバーとメインコンテンツの間隔 */
+  }
+  
+  .sidebar {
+    background-color: #f3f3f3; /* サイドバーの背景色 */
+    padding: 20px; /* サイドバー内のパディング */
+  }
+  
+  .sidebar nav ul {
+    list-style: none; /* リストスタイルの除去 */
+    padding: 0; /* リストのデフォルトパディングの除去 */
+  }
+  
+  .sidebar nav ul li a {
+    text-decoration: none; /* リンクの下線の除去 */
+    color: #333; /* リンクの色 */
+    display: block; /* リンクをブロック要素にする */
+    padding: 10px; /* リンクのパディング */
+  }
+  
+  .sidebar nav ul li a:hover {
+    background-color: #ddd; /* ホバー時の背景色 */
+  }
+  
+  .content {
+    background-color: #fff; /* メインコンテンツの背景色 */
+    padding: 20px; /* メインコンテンツ内のパディング */
+  }
+  
+  /* レスポンシブ対応 */
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr; /* スマートフォンではサイドバーを非表示にする */
+    }
+  
+    .sidebar {
+      display: none; /* スマートフォンではサイドバーを非表示にする */
+    }
+  }
+  /*Grid A*/
+  .profile-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2列のグリッドレイアウト */
+    gap: 20px; /* グリッドアイテム間のギャップ */
+    padding: 20px; /* グリッド全体のパディング */
+    background-color: #f3f3f3; /* グリッドの背景色 */
+    border-radius: 10px; /* 角の丸み */
+  }
+  
+  .profile-item {
+    background-color: #ffffff; /* 各アイテムの背景色 */
+    padding: 10px; /* アイテムのパディング */
+    border-radius: 5px; /* アイテムの角の丸み */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 影の効果 */
+  }
+  
+  .profile-item h3 {
+    margin-top: 0; /* タイトルの上マージンを削除 */
+    color: #333333; /* タイトルの色 */
+  }
+  
+  .profile-item p {
+    color: #666666; /* テキストの色 */
+  }
+  /* プロフィール編集ボタンのスタイル */
+.edit-profile-button {
+  background-color: #4CAF50; /* 緑色の背景 */
+  color: white; /* 白色のテキスト */
+  padding: 10px 20px; /* 上下10px、左右20pxのパディング */
+  border: none; /* 境界線なし */
+  border-radius: 5px; /* 角丸のデザイン */
+  font-size: 16px; /* 文字の大きさ */
+  cursor: pointer; /* ホバー時のカーソル変更 */
+  text-decoration: none; /* テキストの装飾を削除 */
+  display: inline-block; /* インラインブロック要素として表示 */
+  margin-top: 20px; /* 上部のマージン */
+  transition: background-color 0.3s; /* 背景色の変化にトランジション効果 */
+}
+
+.edit-profile-button:hover {
+  background-color: #45a049; /* ホバー時の背景色を少し暗く */
+}
+
+  #gridB {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #gridB h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .form-item {
+    margin-bottom: 15px;
+  }
+  
+  .form-item label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .form-item input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* パディングとボーダーを幅に含める */
+  }
+  
+  .button-panel {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .button-panel input[type="submit"] {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .button-panel input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  

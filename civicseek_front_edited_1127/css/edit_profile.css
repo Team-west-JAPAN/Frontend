@@ -1,0 +1,123 @@
+.header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+.logo{
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav ul li {
+    margin-right: 35px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 2.3em;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 600px) 
+    .header {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .logo{
+        align-self: start;
+    }
+    .nav ul {
+        flex-direction:row;
+        margin-top: 10px;
+    }
+
+    .nav ul li {
+        margin-right: 30px;
+    }
+/* 基本的なリセットとボックスサイジング */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* プロフィール編集フォームのデザイン */
+.edit-profile-grid {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+/* ラベルと入力フィールド */
+.form-item {
+    margin-bottom: 10px;
+}
+
+.form-item label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-item input[type="text"], 
+.form-item input[type="email"], 
+.form-item input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* ボタンスタイル */
+.button-panel {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.button-panel button {
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-panel button:hover {
+    background-color: #4cae4c;
+}
+
+/* レスポンシブデザインのためのメディアクエリ */
+@media (max-width: 600px) {
+    .edit-profile-grid {
+        margin: 20px auto;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .edit-profile-grid {
+        margin: 30px auto;
+        padding: 15px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .edit-profile-grid {
+        margin: 50px auto;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,157 @@
+.header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+.logo{
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav ul li {
+    margin-right: 20px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 2.3em;
+}
+/* 基本的なリセットとボックスサイジング */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* フォームのデザイン */
+.form-wrapper {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-wrapper h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-wrapper form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-item {
+    margin-bottom: 10px;
+}
+
+.form-item label {
+    display: none; /* ラベルは非表示 */
+}
+
+.form-item input[type="text"], /* 'username' から 'text' へ修正 */
+.form-item input[type="email"],
+.form-item input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.button-panel {
+    margin-top: 20px;
+}
+
+.button-panel .button {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #5cb85c;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #4cae4c;
+}
+
+.form-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-footer p {
+    margin-bottom: 5px;
+}
+
+.form-footer a {
+    color: #5cb85c;
+    text-decoration: none;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
+
+/* レスポンシブデザインのためのメディアクエリ */
+@media (max-width: 600px) {
+    .form-wrapper {
+        margin: 20px auto;
+        padding: 10px;
+    }
+    .form-item input[type="text"],
+    .form-item input[type="email"],
+    .form-item input[type="password"] {
+        padding: 8px;
+    }
+
+    .button-panel .button {
+        padding: 8px 0;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .form-wrapper {
+        margin: 30px auto;
+        padding: 15px;
+    }
+    .form-item input[type="text"],
+    .form-item input[type="email"],
+    .form-item input[type="password"] {
+        padding: 10px;
+    }
+
+    .button-panel .button {
+        padding: 10px 0;
+    }
+}
+
+@media (min-width: 1025px) {
+    .form-wrapper {
+        margin: 50px auto;
+        padding: 20px;
+    }
+    .form-item input[type="text"],
+    .form-item input[type="email"],
+    .form-item input[type="password"] {
+        padding: 12px;
+    }
+
+    .button-panel .button {
+        padding: 12px 0;
+    }
+}

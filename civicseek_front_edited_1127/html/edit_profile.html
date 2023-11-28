@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title>レスポンシブヘッダー</title>
+    <link rel="stylesheet" href="../css/edit_profile.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+     <header class="header">
+      <a href="../html/afterlogin.html"><div class="logo"><h1>Civic Seek</h1></div></a>
+        <nav class="nav">
+            <ul>
+                <li><a href="#"><i class="fa fa-bell" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                <li><a href="../html/toolbar.html"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <div class="edit-profile-grid">
+        <div class="form-item">
+          <label><input type="checkbox" name="edit-option" value="username"> ユーザー名を編集する</label>
+          <input type="text" id="username" name="username" placeholder="ユーザー名を入力してください" style="display: none;">
+        </div>
+        <div class="form-item">
+          <label><input type="checkbox" name="edit-option" value="email"> メールアドレスを編集する</label>
+          <input type="email" id="email" name="email" placeholder="メールアドレスを入力してください" style="display: none;">
+        </div>
+        <div class="form-item">
+          <label><input type="checkbox" name="edit-option" value="password"> パスワードを編集する</label>
+          <input type="password" id="password" name="password" placeholder="パスワードを入力してください" style="display: none;">
+        </div>
+        <div class="button-panel">
+          <button type="submit">保存</button>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="../javascript/edit_profile.js"></script>
+</html>    

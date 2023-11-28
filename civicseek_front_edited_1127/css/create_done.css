@@ -1,0 +1,38 @@
+.header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+.logo{
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav ul li {
+    margin-right: 20px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 2.3em;
+}
+.form-wrapper p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 認証コード入力フィールドのスタイル */
+.form-item label {
+    display: block; /* ラベルを表示 */
+    text-align: left;
+    margin-bottom: 5px;
+}

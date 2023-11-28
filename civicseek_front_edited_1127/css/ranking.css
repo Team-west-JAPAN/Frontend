@@ -1,0 +1,177 @@
+header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+    position: fixed; /* ヘッダーを上部に固定 */
+    top: 0;
+    width: 100%;
+    z-index: 100; /* ヘッダーを最前面に */
+    margin-bottom: auto;
+}
+.logo{
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav ul li {
+    margin-right: 20px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 2.3em;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .logo{
+        align-self: start;
+    }
+    .nav ul {
+        flex-direction:row
+        margin-top: 10px;
+    }
+
+    .nav ul li {
+        margin-right: 30px;
+    }
+    search_container, .post-button {
+        width: 100%;
+        margin: 10px 0;
+        align-items:center ;
+    }
+}
+.search_container{
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid #999;
+    padding: 3px 10px;
+    border-radius: 20px;
+    height: 2.3em;
+    width: 260px;
+    overflow: hidden;
+    background: #fff;
+    margin-right: 2em;
+  }
+  .search_container input[type="text"]{
+    border: none;
+    height: 2.0em;
+    color: #333;
+    padding-left: 1em
+  }
+  .search_container input[type="text"]:focus {
+    outline: 0;
+  }
+  .search_container input[type="submit"]{
+    cursor: pointer;
+    font-family: FontAwesome;
+    font-size: 1.3em;
+    border: none;
+    background: none;
+    color: #3879D9;
+    position: absolute;
+    width: 2.5em;
+    height: 2.5em;
+    right: 0;
+    top: -10px;
+    outline : none;
+  }
+.post-button {
+    background-color: #4c61af; /* ボタンの背景色 */
+    color: white; /* ボタンのテキスト色 */
+    padding: 10px 24px; /* ボタンのパディング */
+    border: none; /* ボタンの境界線を削除 */
+    cursor: pointer; /* マウスカーソルをポインタに変更 */
+    text-align: center; /* テキストを中央揃えに */
+    text-decoration: none; /* テキストの下線を削除 */
+    display: inline-block; /* ボタンをインラインブロック要素に */
+    font-size: 16px; /* フォントサイズを設定 */
+    margin: 4px 2px; /* マージンを設定 */
+    transition-duration: 0.4s; /* トランジションの時間を設定 */
+    margin-left: em;
+}
+ul li {
+    display: inline-block;
+    color: #333;
+    margin-right: 50px; /* Adjust as needed */
+  }
+  main {
+    margin-top: 60px; /* ヘッダーの高さに合わせて調整 */
+}
+/* 基本的なリセットとボックスサイジング */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --primary-color: #c1c5cc; /* 主要なテーマカラー */
+    --secondary-color: #e9e8e0; /* セカンダリカラー */
+    --border-radius: 10px; /* ボーダーの角の丸み */
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* ボックスの影 */
+    --text-color: #333; /* テキストの色 */
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* モダンなフォント */
+    background-color: var(--secondary-color); /* 背景色 */
+    color: var(--text-color);
+    padding-top: 60px; /* ヘッダーとの間のスペース */
+}
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1,200px);
+    gap: 20px; /* グリッド間の間隔 */
+    margin-bottom: 40px; /* 下の長方形との間隔 */
+  }
+
+  .box {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: var(--border-radius);
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease; /* ホバー時のアニメーション */
+  }
+
+  .box:hover {
+    transform: translateY(-5px); /* ホバー時に浮き上がる効果 */
+  }
+
+  .long-boxes {
+    display: grid;
+    grid-template-rows: repeat(7, 100px); /* ここは以前の設定のまま */
+    gap: 10px; /* グリッド間の間隔 */
+    margin: 0 auto; /* 左右のマージンを自動に設定 */
+    max-width: 90%; /* 最大幅を100%ではなく、90%に設定 */
+}
+
+  .long-box {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease;
+  }
+
+  .long-box:hover {
+    transform: translateY(-5px); /* ホバー時に浮き上がる効果 */
+  }
+
+
+
+
+

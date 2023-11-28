@@ -1,0 +1,152 @@
+.header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+.logo{
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav ul li {
+    margin-right: 20px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 2.3em;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .logo{
+        align-self: start;
+    }
+    .nav ul {
+        flex-direction:row
+        margin-top: 10px;
+    }
+
+    .nav ul li {
+        margin-right: 30px;
+    }
+    search_container, .post-button {
+        width: 100%;
+        margin: 10px 0;
+        align-items:center ;
+    }
+}
+.search_container{
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid #999;
+    padding: 3px 10px;
+    border-radius: 20px;
+    height: 2.3em;
+    width: 260px;
+    overflow: hidden;
+    background: #fff;
+    margin-right: 2em;
+  }
+  .search_container input[type="text"]{
+    border: none;
+    height: 2.0em;
+    color: #333;
+    padding-left: 1em
+  }
+  .search_container input[type="text"]:focus {
+    outline: 0;
+  }
+  .search_container input[type="submit"]{
+    cursor: pointer;
+    font-family: FontAwesome;
+    font-size: 1.3em;
+    border: none;
+    background: none;
+    color: #3879D9;
+    position: absolute;
+    width: 2.5em;
+    height: 2.5em;
+    right: 0;
+    top: -10px;
+    outline : none;
+  }
+.post-button {
+    background-color: #4c61af; /* ボタンの背景色 */
+    color: white; /* ボタンのテキスト色 */
+    padding: 10px 24px; /* ボタンのパディング */
+    border: none; /* ボタンの境界線を削除 */
+    cursor: pointer; /* マウスカーソルをポインタに変更 */
+    text-align: center; /* テキストを中央揃えに */
+    text-decoration: none; /* テキストの下線を削除 */
+    display: inline-block; /* ボタンをインラインブロック要素に */
+    font-size: 16px; /* フォントサイズを設定 */
+    margin: 4px 2px; /* マージンを設定 */
+    transition-duration: 0.4s; /* トランジションの時間を設定 */
+    margin-left: em;
+}/* グリッドレイアウトのスタイル */
+.post-and-comments-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* 投稿セクションが大きく、コメントセクションが小さい */
+    grid-gap: 20px;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.post-section, .comments-section {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.post-section h2, .comments-section h3 {
+    margin-top: 0;
+}
+
+.post-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.comment {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+textarea {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
