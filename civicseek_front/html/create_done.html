@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <style>body {
+      margin: 0;
+      line-height: normal;
+    }
+    
+    :root {
+      /* fonts */
+      --font-ubuntu: Ubuntu;
+      --font-inter: Inter;
+    
+      /* font sizes */
+      --font-size-29xl: 3rem;
+      --font-size-77xl: 6rem;
+    
+      /* Colors */
+      --color-black: #000;
+    }
+    .civic-seek {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33.81rem;
+  height: 10.31rem;
+}
+.create-done-child {
+  position: absolute;
+  top: 10.28rem;
+  left: -0.03rem;
+  border-top: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 90.06rem;
+  height: 0.06rem;
+}
+.p {
+  margin: 0;
+}
+.div {
+  position: absolute;
+  top: 39.13rem;
+  left: 7.94rem;
+  font-size: var(--font-size-29xl);
+  font-family: var(--font-inter);
+  display: inline-block;
+  width: 74.06rem;
+  height: 9.75rem;
+}
+.txt {
+  line-break: anywhere;
+  width: 100%;
+}
+.div1 {
+  position: absolute;
+  top: 19rem;
+  left: 1.81rem;
+  font-family: var(--font-inter);
+  display: flex;
+  align-items: center;
+  width: 86.38rem;
+  height: 13rem;
+}
+.create-done-item {
+  position: absolute;
+  top: 51.56rem;
+  left: 37.19rem;
+  border-radius: 15px;
+  background-color: #9dcaff;
+  width: 15.56rem;
+  height: 6.06rem;
+  cursor: pointer;
+}
+.top {
+  text-decoration: none;
+  position: absolute;
+  top: 51.13rem;
+  left: 35.75rem;
+  font-size: var(--font-size-29xl);
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18.5rem;
+  height: 6.94rem;
+}
+.create-done {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 64rem;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-77xl);
+  color: var(--color-black);
+  font-family: var(--font-ubuntu);
+}
+</style>
+    <div class="create-done">
+      <div class="civic-seek">Civic Seek</div>
+      <div class="create-done-child"></div>
+      <div class="div">
+        <p class="p">登録されたアドレスに送信しました。</p>
+        <p class="p">近日中にご確認ください。</p>
+      </div>
+      <div class="div1">
+        <span class="txt">
+          <p class="p">アカウントの作成が</p>
+          <p class="p">完了しました。</p>
+        </span>
+      </div>
+      <div class="create-done-item" id="rectangle"></div>
+      <a class="top">TOPへ</a>
+    </div>
+
+    <script>
+      var rectangle = document.getElementById("rectangle");
+      if (rectangle) {
+        rectangle.addEventListener("click", function (e) {
+          // Please sync "ログイン後HOME(afterlogin)" to the project
+        });
+      }
+      </script>
+  </body>
+</html>

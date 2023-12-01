@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title>レスポンシブヘッダー</title>
+    <link rel="stylesheet" href="../css/toolbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+     <header class="header">
+      <a href="../html/afterlogin.html"><div class="logo"><h1>Civic Seek</h1></div></a>
+        <form method="get" action="#" class="search_container">
+            <input type="text" size="25" placeholder="キーワード検索">
+            <input type="submit" value="&#xf002">
+        </form>
+        <input type="button" value="ログイン" onclick="location.href='../html/login.html'"/>
+        <button class="post-button"><i class="bi bi-plus-lg"></i> 投稿</button>
+        <nav class="nav">
+            <ul>
+                <li><a href="#"><i class="fa fa-bell" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                <li><a href="../html/toolbar.html"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+      <aside class="sidebar">
+        <!-- サイドバーの内容 -->
+        <nav>
+          <ul>
+            <li><a href="#" id="profile-link">プロフィール</a></li>
+            <li><a href="#" id="settings-link">設定</a></li>
+            <li><a href="#" id="faq-link">よくある質問</a></li>
+            <li><a href="#" id="other-link">その他</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <main class="content">
+        <!-- メインコンテンツの内容 -->
+        <div id="gridA" class="profile-grid">
+          <div class="profile-item">
+            <h3>ユーザー名</h3>
+            <p>ユーザーのユーザー名</p>
+          </div>
+          <div class="profile-item">
+            <h3>名前</h3>
+            <p>ユーザーの実名</p>
+          </div>
+          <div class="profile-item">
+            <h3>メールアドレス</h3>
+            <p>user@example.com</p>
+          </div>
+          <div class="profile-item">
+            <h3>Civicseek参加日</h3>
+            <p>2023年1月1日</p>
+          </div>
+          <button class="edit-profile-button" onclick="location.href='/Users/chobi/Downloads/civicseek_front/html/edit_profile.html'">プロフィールを変更する</button>
+        </div>
+        <div id="gridB" style="display: none;">
+          <h2>パスワード変更</h2>
+          <form id="passwordChangeForm">
+            <div class="form-item">
+              <label for="currentPassword">現在のパスワード</label>
+              <input type="password" id="currentPassword" name="currentPassword" required>
+            </div>
+            <div class="form-item">
+              <label for="newPassword">新しいパスワード</label>
+              <input type="password" id="newPassword" name="newPassword" required>
+            </div>
+            <div class="form-item">
+              <label for="confirmNewPassword">新しいパスワードの確認</label>
+              <input type="password" id="confirmNewPassword" name="confirmNewPassword" required>
+            </div>
+            <div class="button-panel">
+              <input type="submit" value="変更を保存">
+            </div>
+          </form>
+        </div>        
+      </main>
+    </div>
+
+  </body>
+  <script src="/Users/chobi/Downloads/civicseek_front/javascript/toolbar.js"></script>
+
+</html>

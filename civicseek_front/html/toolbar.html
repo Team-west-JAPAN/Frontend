@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <style>body {
+      margin: 0;
+      line-height: normal;
+    }
+    
+    :root {
+      /* fonts */
+      --font-inter: Inter;
+      --font-ubuntu: Ubuntu;
+    
+      /* font sizes */
+      --font-size-mid-5: 1.09rem;
+    
+      /* Colors */
+      --color-white: #fff;
+      --color-black: #000;
+    }
+    .civic-seek {
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 5.25rem;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 29.59rem;
+  height: 9.02rem;
+  cursor: pointer;
+}
+.toolbar-child {
+  position: absolute;
+  top: 8.56rem;
+  left: -0.03rem;
+  border-top: 0.9px solid var(--color-black);
+  box-sizing: border-box;
+  width: 78.81rem;
+  height: 0.06rem;
+}
+.toolbar-item {
+  position: absolute;
+  top: 8.59rem;
+  left: 15.37rem;
+  width: 0.06rem;
+  height: 47.41rem;
+}
+.rectangle-div,
+.toolbar-inner {
+  position: absolute;
+  top: 8.59rem;
+  left: 0;
+  background-color: var(--color-white);
+  border: 0.9px solid var(--color-black);
+  box-sizing: border-box;
+  width: 15.42rem;
+  height: 4.65rem;
+}
+.rectangle-div {
+  top: 13.23rem;
+}
+.div {
+  position: absolute;
+  top: 9.73rem;
+  left: 2.02rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 11.32rem;
+  height: 2.41rem;
+}
+.rectangle-icon,
+.toolbar-child1 {
+  position: absolute;
+  left: 0;
+  width: 15.42rem;
+  height: 4.65rem;
+}
+.toolbar-child1 {
+  top: 17.88rem;
+  background-color: var(--color-white);
+  border: 0.9px solid var(--color-black);
+  box-sizing: border-box;
+}
+.rectangle-icon {
+  top: 22.53rem;
+}
+.a {
+  text-decoration: none;
+  position: absolute;
+  top: 9.73rem;
+  left: 2.02rem;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 11.32rem;
+  height: 2.41rem;
+}
+.toolbar-child2 {
+  position: absolute;
+  top: 26.74rem;
+  left: 0;
+  background-color: var(--color-white);
+  border: 0.9px solid var(--color-black);
+  box-sizing: border-box;
+  width: 15.42rem;
+  height: 4.65rem;
+}
+.a1,
+.div1 {
+  left: 2.02rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 11.32rem;
+  height: 2.41rem;
+}
+.div1 {
+  position: absolute;
+  top: 19.03rem;
+}
+.a1 {
+  text-decoration: none;
+  top: 14.6rem;
+  color: inherit;
+}
+.a1,
+.div2,
+.div3 {
+  position: absolute;
+}
+.div2 {
+  top: 23.63rem;
+  left: 1.48rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12.91rem;
+  height: 2.52rem;
+}
+.div3 {
+  top: 28.55rem;
+  left: 6.45rem;
+  font-family: var(--font-inter);
+  text-align: left;
+  display: inline-block;
+  width: 11.7rem;
+  height: 2.73rem;
+}
+.bierrorcircle-icon {
+  position: absolute;
+  top: 28.27rem;
+  left: 4.21rem;
+  width: 1.64rem;
+  height: 1.64rem;
+}
+.toolbar {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 56rem;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-mid-5);
+  color: var(--color-black);
+  font-family: var(--font-ubuntu);
+}
+
+    </style>
+    <div class="toolbar">
+      <a class="civic-seek" id="civicSeek">Civic Seek</a>
+      <div class="toolbar-child"></div>
+      <img class="toolbar-item" alt="" src="./public/line-3.svg" />
+
+      <div class="toolbar-inner"></div>
+      <div class="rectangle-div"></div>
+      <div class="div">マイページ</div>
+      <div class="toolbar-child1"></div>
+      <img class="rectangle-icon" alt="" src="./public/rectangle-26.svg" />
+
+      <a class="a">マイページ</a>
+      <div class="toolbar-child2"></div>
+      <div class="div1">設定</div>
+      <a class="a1">会員情報</a>
+      <div class="div2">お気に入り</div>
+      <div class="div3">ヘルプ</div>
+      <img class="bierrorcircle-icon" alt="" src="./public/bierrorcircle.svg" />
+    </div>
+
+    <script>
+      var civicSeek = document.getElementById("civicSeek");
+      if (civicSeek) {
+        civicSeek.addEventListener("click", function (e) {
+          // Please sync "ログイン後HOME(afterlogin)" to the project
+        });
+      }
+      </script>
+  </body>
+</html>

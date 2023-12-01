@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <style>body {
+      margin: 0;
+      line-height: normal;
+    }
+    
+    :root {
+      /* fonts */
+      --font-ubuntu: Ubuntu;
+    
+      /* font sizes */
+      --font-size-37xl: 3.5rem;
+    
+      /* Colors */
+      --color-black: #000;
+    }
+    .civic-seek,
+.div {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.civic-seek {
+  top: 0;
+  left: 0;
+  font-size: 5.25rem;
+  width: 29.75rem;
+  height: 9.02rem;
+  cursor: pointer;
+}
+.div {
+  top: 19.36rem;
+  left: 14.88rem;
+  width: 55.4rem;
+  height: 11.7rem;
+}
+.mdoutlinedoneoutline-icon,
+.postdone-child {
+  position: absolute;
+  top: 23.02rem;
+  left: 16.52rem;
+  width: 5.36rem;
+  height: 4.38rem;
+}
+.postdone-child {
+  top: 36.53rem;
+  left: 26.69rem;
+  border-radius: 8.75px;
+  background-color: #8fdaff;
+  width: 24.28rem;
+  height: 7.77rem;
+  cursor: pointer;
+}
+.home {
+  text-decoration: none;
+  position: absolute;
+  top: 37.63rem;
+  left: 29.15rem;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26.2rem;
+  height: 5.41rem;
+}
+.home-fill-icon,
+.menu-icon {
+  position: absolute;
+  top: 37.95rem;
+  left: 30.73rem;
+  width: 5.2rem;
+  height: 4.48rem;
+}
+.menu-icon {
+  top: 3.75rem;
+  left: 70.88rem;
+  width: 3.61rem;
+  height: 3.39rem;
+}
+.user-cicrle-light-icon {
+  position: absolute;
+  top: 3.34rem;
+  left: 64.64rem;
+  width: 3.06rem;
+  height: 3.12rem;
+  cursor: pointer;
+}
+.postdone-item {
+  position: absolute;
+  top: 4.05rem;
+  left: 31.77rem;
+  background-color: #d9d9d9;
+  width: 17.23rem;
+  height: 2.9rem;
+}
+.input,
+.search-icon {
+  position: absolute;
+  top: 4.87rem;
+  left: 32.92rem;
+  width: 1.35rem;
+  height: 1.35rem;
+}
+.input {
+  border: 0;
+  font-family: var(--font-ubuntu);
+  font-size: 0.66rem;
+  background-color: transparent;
+  top: 4.59rem;
+  left: 32.27rem;
+  color: var(--color-black);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 11.65rem;
+  height: 1.97rem;
+}
+.postdone-inner {
+  position: absolute;
+  top: 9rem;
+  left: 0.85rem;
+  border-top: 0.9px solid var(--color-black);
+  box-sizing: border-box;
+  width: 78.81rem;
+  height: 0.06rem;
+}
+.postdone {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 56rem;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-37xl);
+  color: var(--color-black);
+  font-family: var(--font-ubuntu);
+}
+</style>
+    <div class="postdone">
+      <div class="civic-seek" id="civicSeekText">Civic Seek</div>
+      <div class="div">投稿が完了しました</div>
+      <img
+        class="mdoutlinedoneoutline-icon"
+        alt=""
+        src="./public/mdoutlinedoneoutline.svg"
+      />
+
+      <div class="postdone-child" id="rectangle"></div>
+      <a class="home">Home</a>
+      <img class="home-fill-icon" alt="" src="./public/home-fill.svg" />
+
+      <img class="menu-icon" alt="" src="./public/menu.svg" />
+
+      <img
+        class="user-cicrle-light-icon"
+        alt=""
+        src="./public/user-cicrle-light.svg"
+        id="userCicrleLightIcon"
+      />
+
+      <div class="postdone-item"></div>
+      <img class="search-icon" alt="" src="./public/search.svg" />
+
+      <input
+        class="input"
+        name="seekname"
+        placeholder="案件を検索する"
+        type="text"
+      />
+
+      <div class="postdone-inner"></div>
+    </div>
+
+    <script>
+      var civicSeekText = document.getElementById("civicSeekText");
+      if (civicSeekText) {
+        civicSeekText.addEventListener("click", function (e) {
+          // Please sync "ログイン後HOME(afterlogin)" to the project
+        });
+      }
+      
+      var rectangle = document.getElementById("rectangle");
+      if (rectangle) {
+        rectangle.addEventListener("click", function (e) {
+          // Please sync "ログイン後HOME(afterlogin)" to the project
+        });
+      }
+      
+      var userCicrleLightIcon = document.getElementById("userCicrleLightIcon");
+      if (userCicrleLightIcon) {
+        userCicrleLightIcon.addEventListener("click", function (e) {
+          // Please sync "ツールバー(toolbar)" to the project
+        });
+      }
+      </script>
+  </body>
+</html>

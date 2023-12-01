@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <style>body {
+      margin: 0;
+      line-height: normal;
+    }
+    
+    :root {
+      /* fonts */
+      --font-ubuntu: Ubuntu;
+    
+      /* font sizes */
+      --font-size-16xl: 2.19rem;
+    
+      /* Colors */
+      --color-black: #000;
+      --color-gainsboro: #d9d9d9;
+    
+      /* Border radiuses */
+      --br-sm-1: 13.1px;
+    }
+    .civic-seek {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 5.25rem;
+  font-family: var(--font-ubuntu);
+  color: var(--color-black);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 29.59rem;
+  height: 9.02rem;
+  cursor: pointer;
+}
+.edit-profile-child {
+  position: absolute;
+  top: 9rem;
+  left: -0.03rem;
+  border-top: 0.9px solid var(--color-black);
+  box-sizing: border-box;
+  width: 78.81rem;
+  height: 0.06rem;
+}
+.user-cicrle-light-icon {
+  position: absolute;
+  top: 11.59rem;
+  left: 4.21rem;
+  width: 6.95rem;
+  height: 6.67rem;
+  cursor: pointer;
+}
+.div,
+.div1 {
+  position: absolute;
+  font-family: var(--font-ubuntu);
+  color: var(--color-black);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div {
+  top: 11.59rem;
+  left: 11.65rem;
+  font-size: 2.73rem;
+  width: 28.22rem;
+  height: 6.51rem;
+}
+.div1 {
+  top: 23.08rem;
+  left: 5.85rem;
+  font-size: var(--font-size-16xl);
+  width: 26.03rem;
+  height: 5.85rem;
+}
+.edit-profile-inner,
+.edit-profile-item {
+  border: 0;
+  background-color: var(--color-gainsboro);
+  position: absolute;
+  top: 28.82rem;
+  left: 16.73rem;
+  border-radius: 13.13px;
+  width: 40.09rem;
+  height: 5.2rem;
+}
+.edit-profile-inner {
+  top: 39.81rem;
+}
+.div2,
+.div3 {
+  position: absolute;
+  top: 35.88rem;
+  left: 9.41rem;
+  font-size: var(--font-size-16xl);
+  font-family: var(--font-ubuntu);
+  color: var(--color-black);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30.95rem;
+  height: 3.94rem;
+}
+.div3 {
+  top: 19.52rem;
+  left: 21.06rem;
+  width: 31.45rem;
+  height: 5.91rem;
+}
+.button,
+.rectangle-div {
+  cursor: pointer;
+  position: absolute;
+}
+.rectangle-div {
+  top: 47.96rem;
+  left: 29.59rem;
+  border-radius: 17.5px;
+  background-color: #a4ceff;
+  width: 15.86rem;
+  height: 4.87rem;
+}
+.button {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 48.56rem;
+  left: 31.39rem;
+  font-size: var(--font-size-16xl);
+  font-family: var(--font-ubuntu);
+  color: var(--color-black);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12.25rem;
+  height: 3.72rem;
+}
+.edit-profile {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 56rem;
+  overflow: hidden;
+}
+
+    </style>
+    <form class="edit-profile">
+      <div class="civic-seek" id="civicSeekText">Civic Seek</div>
+      <div class="edit-profile-child"></div>
+      <img
+        class="user-cicrle-light-icon"
+        alt=""
+        src="./public/user-cicrle-light.svg"
+        id="userCicrleLight"
+      />
+
+      <div class="div">マイプロフィール</div>
+      <div class="div1">名前</div>
+      <input class="edit-profile-item" name="Enter name" type="text" />
+
+      <input class="edit-profile-inner" name="email" type="text" />
+
+      <div class="div2">メールアドレス</div>
+      <div class="div3">情報の編集</div>
+      <div class="rectangle-div" id="rectangle"></div>
+      <button class="button" autofocus="{true}">修正する</button>
+    </form>
+
+    <script>
+      var civicSeekText = document.getElementById("civicSeekText");
+      if (civicSeekText) {
+        civicSeekText.addEventListener("click", function (e) {
+          // Please sync "ログイン後HOME(afterlogin)" to the project
+        });
+      }
+      
+      var userCicrleLight = document.getElementById("userCicrleLight");
+      if (userCicrleLight) {
+        userCicrleLight.addEventListener("click", function (e) {
+          // Please sync "ツールバー(toolbar)" to the project
+        });
+      }
+      
+      var rectangle = document.getElementById("rectangle");
+      if (rectangle) {
+        rectangle.addEventListener("click", function (e) {
+          // Please sync "プロフィールページ(profile)" to the project
+        });
+      }
+      </script>
+  </body>
+</html>

@@ -1,0 +1,195 @@
+
+  
+.header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+.logo{
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav ul li {
+    margin-right: 20px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 2.3em;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .logo{
+        align-self: start;
+    }
+    .nav ul {
+        flex-direction:row
+        margin-top: 10px;
+    }
+
+    .nav ul li {
+        margin-right: 30px;
+    }
+    search_container, .post-button {
+        width: 100%;
+        margin: 10px 0;
+        align-items:center ;
+    }
+    
+}
+input[type="button"] {
+    background-color: #4CAF50; /* 緑色の背景 */
+    border: none;
+    color: white;
+    padding: 10px 20px; /* パディングを少し小さくして大きく見せる */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px; /* ボタンの角を丸くする */
+
+}
+
+input[type="button"]:hover {
+    background-color: #45a049; /* ホバー時に少し暗い緑色に変わる */
+}
+
+input[type="button"]:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666; /* クリック時に影を小さくする */
+    transform: translateY(4px); /* クリック時に少し下に移動するように見せる */
+}
+.search_container{
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid #999;
+    padding: 3px 10px;
+    border-radius: 20px;
+    height: 2.3em;
+    width: 260px;
+    overflow: hidden;
+    background: #fff;
+    margin-right: 2em;
+  }
+  .search_container input[type="text"]{
+    border: none;
+    height: 2.0em;
+    color: #333;
+    padding-left: 1em
+  }
+  .search_container input[type="text"]:focus {
+    outline: 0;
+  }
+  .search_container input[type="submit"]{
+    cursor: pointer;
+    font-family: FontAwesome;
+    font-size: 1.3em;
+    border: none;
+    background: none;
+    color: #3879D9;
+    position: absolute;
+    width: 2.5em;
+    height: 2.5em;
+    right: 0;
+    top: -10px;
+    outline : none;
+  }
+.post-button {
+    background-color: #4c61af; /* ボタンの背景色 */
+    color: white; /* ボタンのテキスト色 */
+    padding: 10px 24px; /* ボタンのパディング */
+    border: none; /* ボタンの境界線を削除 */
+    cursor: pointer; /* マウスカーソルをポインタに変更 */
+    text-align: center; /* テキストを中央揃えに */
+    text-decoration: none; /* テキストの下線を削除 */
+    display: inline-block; /* ボタンをインラインブロック要素に */
+    font-size: 16px; /* フォントサイズを設定 */
+    margin: 4px 2px; /* マージンを設定 */
+    transition-duration: 0.4s; /* トランジションの時間を設定 */
+    margin-left: em;
+}
+ul li {
+    display: inline-block;
+    color: #333;
+    margin-right: 50px; /* Adjust as needed */
+  }
+
+}
+/* 基本的なリセットとボックスサイジング */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* メインコンテナ */
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    grid-template-rows: repeat(100,200px);
+    gap: 20px; /* グリッドアイテム間のギャップ */
+    border-radius: 10px;
+    background-color: #f8f8f8; /* ライトグレーの背景色 */
+    padding: 20px;
+}
+
+/* 各グリッドアイテム */
+.wrapper > div {
+    background-color: #ffffff; /* 白の背景色 */
+    border: 2px solid #e1e1e1; /* ライトグレーの境界線 */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    color: #333; /* 濃いグレーのテキスト */
+    font-family: Arial, sans-serif; /* モダンなフォント */
+    font-size: 1.2em;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* ソフトな影を追加 */
+}
+
+/* メディアクエリ：モバイルデバイス用のスタイル調整 */
+@media (max-width: 600px) {
+    .wrapper {
+        grid-template-columns: 1fr; /* モバイルでは1列に */
+    }
+}
+grid-container {
+    position: relative;
+}
+
+.grid-item {
+    /* ここにグリッドアイテムのスタイリング */
+}
+.icons {
+    position: absolute;
+    bottom: -10px; /* グリッドアイテムの外側に配置 */
+    left: 10px; /* 左からの距離 */
+    display: flex;
+}
+.icons a {
+    margin-right: 10px; /* アイコン間のスペース */
+    text-decoration: none;
+    color: black; /* リンクの色 */
+}
+.icons i {
+    margin-right: 5px; /* アイコンとテキストの間隔 */
+}
+
+
+

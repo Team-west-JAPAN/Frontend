@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <style>body {
+      margin: 0;
+      line-height: normal;
+    }
+    
+    :root {
+      /* fonts */
+      --font-inter: Inter;
+      --font-ubuntu: Ubuntu;
+    
+      /* font sizes */
+      --font-size-mid-5: 1.09rem;
+      --font-size-2xs-5: 0.66rem;
+      --font-size-65xl: 5.25rem;
+      --font-size-7xl-3: 1.64rem;
+    
+      /* Colors */
+      --color-black: #000;
+      --color-gainsboro: #d9d9d9;
+      --color-gray: #222;
+    
+      /* Border radiuses */
+      --br-10xs-1: 2.1px;
+      --br-4xs-8: 8.8px;
+    }
+    .homeafterlogin-child {
+  position: absolute;
+  top: 7.22rem;
+  left: -0.03rem;
+  border-top: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 92.56rem;
+  height: 0.06rem;
+}
+.subtract-icon {
+  position: relative;
+  width: 2.33rem;
+  height: 2.41rem;
+}
+.home-fill {
+  text-decoration: none;
+  position: absolute;
+  top: 9.02rem;
+  left: 0.93rem;
+  width: 3.99rem;
+  height: 3.6rem;
+}
+.home {
+  position: absolute;
+  top: 9.73rem;
+  left: 5.25rem;
+  font-size: 1.64rem;
+  font-family: var(--font-ubuntu);
+  color: var(--color-black);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7.06rem;
+  height: 2.79rem;
+}
+.homeafterlogin-item,
+.rankings {
+  position: absolute;
+  cursor: pointer;
+}
+.rankings {
+  top: 9.73rem;
+  left: 17.34rem;
+  font-size: 1.64rem;
+  font-family: var(--font-ubuntu);
+  color: var(--color-black);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 11.59rem;
+  height: 2.79rem;
+}
+.homeafterlogin-item {
+  border: 0.9px solid var(--color-black);
+  top: 15.97rem;
+  left: 3.12rem;
+  border-radius: 8.75px;
+  background-color: var(--color-gainsboro);
+  box-sizing: border-box;
+  width: 20.02rem;
+  height: 9.63rem;
+}
+.favorite-icon,
+.favorite-icon1 {
+  position: absolute;
+  top: 26.09rem;
+  left: 3.17rem;
+  width: 1.74rem;
+  height: 1.57rem;
+}
+.favorite-icon1 {
+  top: 10.34rem;
+  left: 30.46rem;
+}
+.homeafterlogin-child1,
+.homeafterlogin-child2,
+.homeafterlogin-child3,
+.homeafterlogin-child4,
+.homeafterlogin-child5,
+.homeafterlogin-child6,
+.homeafterlogin-inner,
+.rectangle-div {
+  position: absolute;
+  top: 15.97rem;
+  left: 29.37rem;
+  border-radius: 8.75px;
+  background-color: var(--color-gainsboro);
+  border: 0.9px solid var(--color-black);
+  box-sizing: border-box;
+  width: 20.02rem;
+  height: 9.63rem;
+}
+.homeafterlogin-child1,
+.homeafterlogin-child2,
+.homeafterlogin-child3,
+.homeafterlogin-child4,
+.homeafterlogin-child5,
+.homeafterlogin-child6,
+.rectangle-div {
+  left: 55.62rem;
+}
+.homeafterlogin-child1,
+.homeafterlogin-child2,
+.homeafterlogin-child3,
+.homeafterlogin-child4,
+.homeafterlogin-child5,
+.homeafterlogin-child6 {
+  top: 41.84rem;
+  left: 3.12rem;
+}
+.homeafterlogin-child2,
+.homeafterlogin-child3,
+.homeafterlogin-child4,
+.homeafterlogin-child5,
+.homeafterlogin-child6 {
+  left: 29.37rem;
+}
+.homeafterlogin-child3,
+.homeafterlogin-child4,
+.homeafterlogin-child5,
+.homeafterlogin-child6 {
+  left: 55.62rem;
+}
+.homeafterlogin-child4,
+.homeafterlogin-child5,
+.homeafterlogin-child6 {
+  top: 29.04rem;
+  left: 3.12rem;
+}
+.homeafterlogin-child5,
+.homeafterlogin-child6 {
+  left: 29.37rem;
+}
+.homeafterlogin-child6 {
+  top: 28.88rem;
+  left: 55.62rem;
+}
+.div {
+  position: absolute;
+  top: 25.81rem;
+  left: 3.77rem;
+  font-size: 0.82rem;
+  font-family: var(--font-ubuntu);
+  color: var(--color-black);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6.23rem;
+  height: 1.97rem;
+}
+.external-icon {
+  position: absolute;
+  top: 26.2rem;
+  left: 18.59rem;
+  width: 1.35rem;
+  height: 1.35rem;
+}
+.div1,
+.div2 {
+  position: absolute;
+  color: var(--color-black);
+  text-align: center;
+}
+.div1 {
+  top: 26.14rem;
+  left: 19.91rem;
+  font-size: var(--font-size-mid-5);
+  font-family: var(--font-inter);
+  display: inline-block;
+  width: 3.23rem;
+  height: 1.48rem;
+}
+.div2 {
+  top: 10.28rem;
+  left: 29.97rem;
+  font-size: 1.31rem;
+  font-family: var(--font-ubuntu);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15.26rem;
+  height: 1.81rem;
+}
+.homeafterlogin-child7 {
+  position: absolute;
+  top: 3.06rem;
+  left: 51.08rem;
+  border-radius: 8.75px;
+  background-color: var(--color-gainsboro);
+  width: 9.19rem;
+  height: 2.9rem;
+}
+.civic-seek {
+  position: absolute;
+  top: -0.49rem;
+  left: -0.87rem;
+  font-size: var(--font-size-65xl);
+  font-family: var(--font-ubuntu);
+  color: var(--color-black);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 29.75rem;
+  height: 9.02rem;
+}
+.homeafterlogin-child8 {
+  position: absolute;
+  top: 3.06rem;
+  left: 29.37rem;
+  background-color: var(--color-gainsboro);
+  width: 17.23rem;
+  height: 2.9rem;
+}
+.search-icon {
+  position: absolute;
+  top: 3.83rem;
+  left: 30.02rem;
+  width: 1.35rem;
+  height: 1.35rem;
+}
+.div3,
+.menu-icon {
+  position: absolute;
+  top: 3.5rem;
+}
+.div3 {
+  left: 29.37rem;
+  font-size: var(--font-size-2xs-5);
+  font-family: var(--font-ubuntu);
+  color: var(--color-black);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 11.65rem;
+  height: 1.97rem;
+}
+.menu-icon {
+  left: 73.66rem;
+  width: 1.97rem;
+  height: 2.02rem;
+}
+.add-ring-icon,
+.div4 {
+  position: absolute;
+  top: 3.66rem;
+  left: 51.79rem;
+  width: 1.44rem;
+  height: 1.34rem;
+}
+.div4 {
+  top: 3.77rem;
+  left: 53.43rem;
+  font-size: var(--font-size-mid-5);
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: center;
+  display: inline-block;
+  width: 6.18rem;
+  height: 1.7rem;
+}
+.user-cicrle-light-child,
+.user-cicrle-light-item {
+  position: absolute;
+  height: 27.56%;
+  width: 27.38%;
+  top: 27.88%;
+  right: 36.31%;
+  bottom: 44.55%;
+  left: 36.31%;
+  border-radius: 50%;
+  border: 0.8px solid var(--color-gray);
+  box-sizing: border-box;
+}
+.user-cicrle-light-item {
+  height: 77.56%;
+  width: 77.38%;
+  top: 11.22%;
+  right: 11.31%;
+  bottom: 11.22%;
+  left: 11.31%;
+}
+.user-cicrle-light-inner {
+  position: absolute;
+  height: 18.01%;
+  width: 52.38%;
+  top: 61.22%;
+  right: 23.81%;
+  bottom: 20.78%;
+  left: 23.81%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.rectangle-a,
+.user-cicrle-light {
+  text-decoration: none;
+  position: absolute;
+}
+.user-cicrle-light {
+  top: 3.45rem;
+  left: 69.67rem;
+  width: 2.01rem;
+  height: 1.87rem;
+  cursor: pointer;
+}
+.rectangle-a {
+  top: 3.06rem;
+  left: 51.08rem;
+  border-radius: 8.75px;
+  background-color: var(--color-gainsboro);
+  width: 9.19rem;
+  height: 2.9rem;
+}
+.div5,
+.input {
+  position: absolute;
+  color: var(--color-black);
+  text-align: center;
+}
+.input {
+  border: 0;
+  font-family: var(--font-ubuntu);
+  font-size: var(--font-size-2xs-5);
+  background-color: transparent;
+  top: 3.5rem;
+  left: 29.37rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 11.65rem;
+  height: 1.97rem;
+}
+.div5 {
+  top: 3.77rem;
+  left: 53.43rem;
+  font-size: var(--font-size-mid-5);
+  font-family: var(--font-inter);
+  display: inline-block;
+  width: 6.18rem;
+  height: 1.7rem;
+  cursor: pointer;
+}
+.bell-icon {
+  position: absolute;
+  top: 3.94rem;
+  left: 64.97rem;
+  width: 1.31rem;
+  height: 1.31rem;
+}
+.sort-child,
+.sort-inner,
+.sort-item {
+  position: absolute;
+  height: 2.99%;
+  width: 60.93%;
+  top: 27.67%;
+  right: 19.53%;
+  bottom: 69.34%;
+  left: 19.53%;
+  border-radius: 2.06px;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.sort-inner,
+.sort-item {
+  width: 44.26%;
+  top: 48.51%;
+  right: 36.2%;
+  bottom: 48.51%;
+}
+.sort-inner {
+  width: 27.6%;
+  top: 69.34%;
+  right: 52.87%;
+  bottom: 27.67%;
+}
+.sort {
+  text-decoration: none;
+  position: absolute;
+  top: 9.06rem;
+  left: 14.81rem;
+  width: 4.95rem;
+  height: 4.3rem;
+}
+.homeafterlogin {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 56rem;
+  overflow: hidden;
+}
+</style>
+    <form class="homeafterlogin">
+      <div class="homeafterlogin-child"></div>
+      <a class="home-fill">
+        <img class="subtract-icon" alt="" src="./public/subtract.svg" />
+      </a>
+      <div class="home">Home</div>
+      <div class="rankings" id="rankingsText">Rankings</div>
+      <iframe class="homeafterlogin-item" loading="eager" id="rectangleIFrame">
+      </iframe>
+      <img class="favorite-icon" alt="" src="./public/favorite.svg" />
+
+      <img class="favorite-icon1" alt="" src="./public/favorite1.svg" />
+
+      <div class="homeafterlogin-inner"></div>
+      <div class="rectangle-div"></div>
+      <div class="homeafterlogin-child1"></div>
+      <div class="homeafterlogin-child2"></div>
+      <div class="homeafterlogin-child3"></div>
+      <div class="homeafterlogin-child4"></div>
+      <div class="homeafterlogin-child5"></div>
+      <div class="homeafterlogin-child6"></div>
+      <div class="div">いいね！</div>
+      <img class="external-icon" alt="" src="./public/external.svg" />
+
+      <div class="div1">共有</div>
+      <div class="div2">いいねした投稿</div>
+      <div class="homeafterlogin-child7"></div>
+      <div class="civic-seek">Civic Seek</div>
+      <div class="homeafterlogin-child8"></div>
+      <img class="search-icon" alt="" src="./public/search.svg" />
+
+      <div class="div3">案件を検索する</div>
+      <img class="menu-icon" alt="" src="./public/menu.svg" />
+
+      <img class="add-ring-icon" alt="" src="./public/add-ring.svg" />
+
+      <div class="div4">募集する</div>
+      <a class="user-cicrle-light" id="userCicrleLight">
+        <div class="user-cicrle-light-child"></div>
+        <div class="user-cicrle-light-item"></div>
+        <img
+          class="user-cicrle-light-inner"
+          alt=""
+          src="./public/ellipse-48.svg"
+        />
+      </a>
+      <a class="rectangle-a"> </a>
+      <div class="civic-seek">Civic Seek</div>
+      <div class="homeafterlogin-child8"></div>
+      <img class="search-icon" alt="" src="./public/search.svg" />
+
+      <input
+        class="input"
+        name="seek2"
+        placeholder="案件を検索する"
+        type="text"
+      />
+
+      <img class="menu-icon" alt="" src="./public/menu.svg" />
+
+      <img class="add-ring-icon" alt="" src="./public/add-ring.svg" />
+
+      <div class="div5" id="text5">投稿する</div>
+      <img class="bell-icon" alt="" src="./public/bell.svg" />
+
+      <a class="sort">
+        <img class="sort-child" alt="" src="./public/vector-7.svg" />
+
+        <img class="sort-item" alt="" src="./public/vector-8.svg" />
+
+        <img class="sort-inner" alt="" src="./public/vector-9.svg" />
+      </a>
+    </form>
+
+    <script>
+      var rankingsText = document.getElementById("rankingsText");
+      if (rankingsText) {
+        rankingsText.addEventListener("click", function (e) {
+          // Please sync "ランキング画面(rankings)" to the project
+        });
+      }
+      
+      var rectangleIFrame = document.getElementById("rectangleIFrame");
+      if (rectangleIFrame) {
+        rectangleIFrame.addEventListener("click", function (e) {
+          // Please sync "投稿表示画面(コメント投稿)(postcomment))" to the project
+        });
+      }
+      
+      var userCicrleLight = document.getElementById("userCicrleLight");
+      if (userCicrleLight) {
+        userCicrleLight.addEventListener("click", function (e) {
+          // Please sync "ツールバー(toolbar)" to the project
+        });
+      }
+      
+      var text5 = document.getElementById("text5");
+      if (text5) {
+        text5.addEventListener("click", function (e) {
+          // Please sync "投稿画面(post)" to the project
+        });
+      }
+      </script>
+  </body>
+</html>
